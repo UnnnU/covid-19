@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
+    <script type="text/javascript" src="js/tool/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tool/echarts.js"></script>
+    <script src='js/tool/mapbox-gl-dev.js'></script>
+    <script type="text/javascript" src="js/tool/echarts-all-3.js"></script>
+    <script type="text/javascript" src="js/tool/EchartsLayer.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  <style>
+    #container{
+      position:fixed;
+      width: 100%;
+      height: 70%;
+  }
+  #showContent{
+      height: 100px; 
+      width:200px;
+      background: rgba(214, 214, 214, 0.68);
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      border-radius: 5px;
+  }  
+</style>
+</head>
+<body >
+  <div id="container" ></div>
+  <!-- 显示街道信息 -->
+  <div id="showContent">
+      <h4>中国大陆疫情信息</h4>无
+  </div>
+  
+  <div id="barChart" style="background:#343332;display:none;width: 1100px"></div>
+
+  <script type="text/javascript" src="js/china.js"></script>
+  <script type="text/javascript" src="js/tmpFlood.js"></script>
+  <script type="text/javascript" src="js/patientNum.js"></script>
+  <!--<script type="text/javascript" src="js/main1.js"></script> -->
+  <script type="text/javascript" src="js/tmpMain.js"></script>
+
+</body>
+</html>
